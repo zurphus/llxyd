@@ -1,0 +1,12 @@
+.main-element-education{
+    margin: 125px 0 0 0;
+}
+.education-title{
+    font-size: 37.5px;
+    text-align: center;
+}
+.education-content-wrap{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 75px;
+}

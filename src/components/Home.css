@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Questrial&family=REM:wght@300;400&family=Roboto:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+.introduction-wrapper{
+    display: grid;
+    place-items: center;
+    height: fit-content;
+    
+}
+.introduction{
+    margin: 210px 50px 0 0;
+    display: grid;
+    grid-template-columns: minmax(290px, auto) 330px;
+    gap: min(300px, 10vw);
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+
+    /*padding: 100px 25px 50px 25px;
+    height: min(79vh, 650px);*/
+}
+
+.introduction div{
+    display: grid;
+    place-items: center;
+}
+
+#title{
+    margin: 10px;
+    font-size: 50px;
+
+    opacity: 0;
+    transform: translateY(-35px);
+    transition: opacity 0.5s ease 0.5s, transform 0.5s ease 0.5s;
+}
+.showTitle{
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+.introduction p{
+    max-width: 500px;
+    margin: 15px 0;
+    font-size: 20px;
+}
+#start-button{
+    margin-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    background-color: #002366;
+    color: #f6f4e6;
+    border: 3px #000000 solid;
+    border-radius: 1px;
+    letter-spacing: 3px;
+    padding: 11px 75px;
+    border-radius: 20px;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+#start-button a{
+    text-decoration: none;
+    color: inherit;
+}
+#start-button:hover{
+    background-color: #001a4d; 
+    transform: scale(1.05); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+}
+.llyxd-image{
+    
+    border-radius: 10px;
+    /*
+    max-width: 95%;
+    max-height: 95%;
+    */
+    width: min(100%, 330px);
+    height: auto;
+
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    /*box-shadow: 0 10px 10px #00008b;*/
+}
+.llyxd-image-wrapper{
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+}
+.play-icon,
+.pause-icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 80px;
+    height: 80px;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+.play-icon{
+    width: 59px;
+    height: 59px;
+}
+
+.pause-icon:hover{
+    color: #d7d5c8;
+}
+.play-icon:hover{
+    color: #d7d5c8;
+}
+.play-icon:active{
+    scale: 0.95;
+}
+.pause-icon:active{
+    scale: 0.95;
+}
+
+
+.content-categories{
+    margin-top: 250px;
+    background-color: #0f0f0f;
+    font-family: "Montserrat", sans-serif;
+}
+.image-card{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    margin-top: 7.5px;
+   /* box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);*/
+    cursor: pointer;
+}
+
+
+.image-card a{
+    color: inherit;
+    text-decoration: none;
+}
+.image-card{
+    box-shadow: 0 0 20px #000000;
+ }
+.image-card:nth-child(1){
+    box-shadow: 0 0 20px #111111 ;
+}
+
+.image-card:hover .image-title{
+    letter-spacing: 15px;
+}
+.image-content{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.image-title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    color: #f6f4e6;
+    margin: 0;
+    letter-spacing: 1px;
+    transition: letter-spacing 0.2s, transform 0.2s, color 0.2s;
+}
+
+
+
+
+
+
+
+
+/* RESPONSIVE STYLES */
+@media screen and (max-width: 1150px){
+    .introduction{
+        gap: 50px;
+        margin-right: 0;
+    }
+    #title{
+        font-size: 43px;
+    }
+}
+@media screen and (max-width: 1000px){
+    .introduction{
+        grid-template-columns: 1fr;
+      }
+      .introduction div{
+        width: 100%;
+        max-width: none; 
+      }
+      .introduction div:last-child{
+        width: 100%;
+        height: auto; 
+      }
+}
+@media screen and (max-width: 552px){
+    .introduction p{
+        max-width: 400px;
+    }
+    .image-card{
+        height: 250px;
+    }
+}
+@media screen and (max-width: 450px){
+    .introduction{
+        margin: 150px 0 0 0;
+    }
+    .image-card{
+        height: 225px;
+    }
+    #title{
+        font-size: 35px;
+        margin: 0;
+    }
+    .content-categories{
+        margin: 85px 0 0 0;
+    }
+    .image-title{
+        font-size: 40px;
+    }
+    
+}
+@media screen and (max-width: 300px){
+    .image-card{
+        height: 200px;
+    }
+    .image-title{
+        font-size: 35px;
+    }
+    
+}

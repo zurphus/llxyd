@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Questrial&family=REM:wght@300;400&family=Roboto:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+body{
+    min-height: 0;
+}
+.main-element-work{
+    margin: 70px 0;
+}
+.work-content-wrap{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+}
+.before-after-set{
+    display: grid;
+    place-items: center;
+    margin-bottom: 25px;
+}
+.first-section-work{
+    position: relative;
+}
+.first-section-work::after{
+    content: '';
+    position: absolute;
+    top: 60px;
+    left: 100%;
+    width: 4px;
+    height: 95%;
+    border-radius: 2px;
+    background-color: #111111;
+    box-shadow: 0 0 2px #111111;
+}
+
+.before-after-title{
+    text-align: center;
+    color: #f6f4e6;
+    font-family: "Montserrat", sans-serif;
+    margin: 50px 0;
+    letter-spacing: 1.5px;
+}
+.before-after-column{
+    position: relative;
+    padding: 15px;
+   /* max- */width: 300px;
+    min-height: 120px;
+    border-radius: 20px;
+    background-size: 225%;
+    background-image: linear-gradient(to right, #002366,#002366,#002366, #663399 );
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transition: all 0.25s, background-position 0.4s;
+
+    cursor: pointer;
+}
+.before-after-column:hover{
+    background-position: right;
+}
+.active-work-column{
+    background-position: right;
+}
+.before-after-column:active 
+.play-stop-icons-work{
+    scale: 0.95;
+}
+
+
+
+.tracks-author-work{
+    font-family: "Montserrat";
+    font-size: 25px;
+    text-align: center;
+    margin: 5px 0 0 0;
+}
+.play-stop-icons-work{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 5px);
+    font-size: 40px;
+    transition: all 0.2s;
+}
+.pause-icon-work{
+    transform: translate(-50%, 0px);
+    font-size: 50px;
+}
+/*
+.after-column{
+    background: linear-gradient(to left, #002366, rebeccapurple);
+}
+*/
+
+@media screen and (max-width: 1000px){
+    .first-section-work::after{
+        display: none;
+    }
+}
+@media screen and (max-width: 750px){
+    .work-content-wrap{
+        grid-template-columns: 1fr;
+    }
+}

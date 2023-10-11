@@ -1,0 +1,13 @@
+#comingSoon{
+    text-align: center;
+    text-wrap: nowrap;
+    font-size: 55px;
+    font-weight: 600;
+}
+
+
+@media screen and (max-width: 550px){
+    #comingSoon{
+        text-wrap: inherit;
+    }
+}

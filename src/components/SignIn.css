@@ -1,0 +1,38 @@
+.coming-soon-wrap{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: grid;
+    place-items: center;
+}
+.coming-soon-form{
+    font-size: 55px;
+    font-weight: 600;
+    margin: 20px 0;
+}
+.go-back-btn{
+    margin-top: 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    background-color: #002366;
+    color: #f6f4e6;
+    border: 3px #000000 solid;
+    border-radius: 1px;
+    letter-spacing: 3px;
+    padding: 11px 50px;
+    border-radius: 20px;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+.go-back-btn a{
+    text-decoration: none;
+    color: inherit;
+}
+.go-back-btn:hover{
+    background-color: #001a4d; 
+    transform: scale(1.05); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+}

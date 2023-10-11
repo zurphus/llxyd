@@ -1,0 +1,75 @@
+.main-element{
+    margin: 100px 0 0 0;
+}
+.about-card{
+    margin: 0 0 25px 0;
+    height: min(80vh, 800px);
+    display: grid;
+    padding-left: 50px;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+}
+.about-members-image{
+    border-radius: 10px;
+    width: min(100%, 330px);
+    height: auto;
+
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+.about-text-wrapper{
+    text-align: center;
+    padding: 5%;
+}
+.about-name{
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+.about-text{
+    max-width: 680px;
+    font-size: 25px;
+    line-height: 37.5px;
+}
+
+/* RESPONSIVE STYLES */
+
+@media screen and (max-width: 1000px){
+    .about-card{
+        height: fit-content;
+        grid-template-columns: 1fr;
+        padding: 0;
+    }
+}
+@media screen and (max-width: 500px){
+    .about-text{
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+@media screen and (max-height: 500px) and (min-width: 1000px) {
+    .about-card{
+        margin: 100px 0;
+    }
+}
+@media screen and (max-height: 385px) and (min-width: 1000px) {
+    .about-card{
+        margin: 100px 0 150px;
+    }
+}
+@media screen and (max-height: 325px) and (min-width: 1000px) {
+    .about-card{
+        margin: 100px 0 200px;
+    }
+}
+@media screen and (max-height: 235px) and (min-width: 1000px) {
+    .about-card{
+        margin: 100px 0 250px;
+    }
+}
+/*
+
+FIX THE BULLSHIT POSITIONING
+
+@media screen and (max-height: 500px) and (min-width: 1000px) {
+   Your CSS styles for screens that meet these conditions go here 
+}
+*/
