@@ -20,7 +20,7 @@ function Collab(){
     };
 
     const submitForm = (e) => {
-        e.preventDefault
+        e.preventDefault()
     }
 
     return(
