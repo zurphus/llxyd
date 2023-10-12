@@ -19,6 +19,10 @@ function Collab(){
         element.style.height = `${element.scrollHeight}px`; 
     };
 
+    const submitForm = (e) => {
+        e.preventDefault
+    }
+
     return(
         <main className="main-element-collab">
             <div className="collab-text-btns-wrap">
@@ -38,7 +42,7 @@ function Collab(){
                 </a>
             </div>
             <form id="contact-form" action="https://formsubmit.co/llxyd.business@gmail.com" method="POST">
-                <input type="hidden" name="_next" value="https://llxyd-rap"></input> 
+                <input type="hidden" name="_next" value="https://www.llxyd-rap.com/collab"></input> 
                 <input type="hidden" name="_subject" value="WEB MAIL"></input> 
                 <div className="input-group">
                     <input id="name-input" className="contact-inputs" type="text" name="name" placeholder="NAME..." required></input> 
@@ -53,7 +57,7 @@ function Collab(){
                     placeholder="MESSAGE..." 
                     required rows="4" cols="50">
                 </textarea>
-                <button id="email-submit-btn" type="submit">SEND</button>
+                <button id="email-submit-btn" type="submit" onClick={submitForm}>SEND</button>
             </form>
 
         </main>
