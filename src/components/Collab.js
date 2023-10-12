@@ -37,7 +37,7 @@ function Collab(){
                     <button className="collab-btns">OTHER</button>
                 </a>
             </div>
-            <form id="contact-form" action="https://formsubmit.co/llxydrap@gmail.com" method="POST">
+            <form id="contact-form" action="https://formsubmit.co/llxyd.business@gmail.com" method="POST">
                 <input type="hidden" name="_next" value=""></input> 
                 <input type="hidden" name="_subject" value=""></input> 
                 <div className="input-group">
