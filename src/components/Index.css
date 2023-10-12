@@ -14,7 +14,9 @@ html::-webkit-scrollbar-thumb {
 html::-webkit-scrollbar-thumb:hover {
     background-color: #999;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 body{
     min-height: 100vh;
     margin: 0;

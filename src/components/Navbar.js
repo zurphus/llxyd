@@ -56,36 +56,36 @@ function Navbar(){
                     <div className="overlay-content-wrap">
                         <ul className="overlayList">
                             <li className="overlayLi">
-                                <Link to="/">
+                                <NavLink to="/">
                                     <div className="navbar-icon-wrap">
                                         <IoHome className="navbar-icons"/>
                                         <p className="navbar-overlay-links">HOME</p>
                                     </div>
-                                </Link>
+                                </NavLink>
                             </li>
                             <li className="overlayLi">
-                                <Link to="/about">
+                                <NavLink to="/about">
                                     <div className="navbar-icon-wrap">
                                         <IoPerson className="navbar-icons"/>
                                         <p className="navbar-overlay-links">ABOUT</p>
                                     </div>
-                                </Link>
+                                </NavLink>
                             </li>
                             <li className="overlayLi">
-                                <Link to="/work">
+                                <NavLink to="/work">
                                     <div className="navbar-icon-wrap">
                                         <IoBriefcase className="navbar-icons"/>
                                         <p className="navbar-overlay-links">WORK</p>
                                     </div>
-                                </Link>
+                                </NavLink>
                             </li>
                             <li className="overlayLi">
-                                <Link to="/reviews">
+                                <NavLink to="/reviews">
                                     <div className="navbar-icon-wrap">
                                         <IoStar className="navbar-icons"/>
                                         <p className="navbar-overlay-links">REVIEWS</p>
                                     </div>
-                                </Link>
+                                </NavLink>
                             </li>
                         </ul>
                         <div className="nav-buttons-wrapper-o">

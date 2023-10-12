@@ -7,7 +7,6 @@ import Reviewspage from './pages/Reviewspage';
 import Pricingpage from './pages/Pricingpage';
 import Collabpage from './pages/Collabpage';
 import Educationpage from './pages/Educationpage';
-import Testingpage from './pages/Testingpage';
 import SignInPage from './pages/SignInPage';
 import SignUpPage from './pages/SIgnUpPage';
 
@@ -24,7 +23,6 @@ function App() {
           <Route path="/education" element={<Educationpage />}></Route>
           <Route path="/sign-in" element={<SignInPage />}></Route>
           <Route path="/sign-up" element={<SignUpPage />}></Route>
-          <Route path="/testing" element={<Testingpage />}></Route>
         </Routes>
     </BrowserRouter>
   );

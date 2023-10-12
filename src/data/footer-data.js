@@ -1,7 +1,7 @@
 const footerData = [
     {
         email: "llxydrap@gmail.com",
-        copyright: "copyright ©"
+        copyright: "© 2023 Lubos Slehofer. All rights reserved."
     }
 ]
 
