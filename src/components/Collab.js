@@ -38,8 +38,8 @@ function Collab(){
                 </a>
             </div>
             <form id="contact-form" action="https://formsubmit.co/llxyd.business@gmail.com" method="POST">
-                <input type="hidden" name="_next" value=""></input> 
-                <input type="hidden" name="_subject" value=""></input> 
+                <input type="hidden" name="_next" value="https://llxyd-rap"></input> 
+                <input type="hidden" name="_subject" value="WEB MAIL"></input> 
                 <div className="input-group">
                     <input id="name-input" className="contact-inputs" type="text" name="name" placeholder="NAME..." required></input> 
                     <input id="email-input" className="contact-inputs" type="email" name="email" placeholder="EMAIL..." required></input> 
