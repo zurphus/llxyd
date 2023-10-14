@@ -42,9 +42,11 @@ function Pricing(){
                                             ))}
                                         </div>
                                     </div>
-                                    <button id={`${mixMaster.id}-buy-btn`} className="buy-pricing-btns left-pricing-btns">
-                                        <a href={mixMaster.checkout} target="_blank">BUY</a>
-                                    </button>
+                                    <a href={mixMaster.checkout}>
+                                        <button id={`${mixMaster.id}-buy-btn`} className="buy-pricing-btns left-pricing-btns">
+                                            BUY
+                                        </button>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -58,8 +60,9 @@ function Pricing(){
                                 <div onClick={() => togglePresetState(index)} className={presetStates[index] ? `${preSet.class} product-column` : 'product-column'}>
                                     <h3 className="name-preset">{preSet.name}</h3>
                                 </div>
-                                
-                                <button id={`${preSet.id}-buy-btn`} className="buy-pricing-btns right-pricing-btns">BUY</button>
+                                <a href={preSet.checkout}>
+                                    <button id={`${preSet.id}-buy-btn`} className="buy-pricing-btns right-pricing-btns">BUY</button>
+                                </a>
                             </div>
                         </div>
                     ))}

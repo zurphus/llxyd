@@ -106,6 +106,10 @@
     right: 50%;
     transform: translate(-211%, -50%);
 }
+.buy-pricing-btns:hover{
+    background-color: #001a4d; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+}
 
 
 
