@@ -58,17 +58,17 @@ footer{
 }
 .copyright-text{
     font-size: 14px;
-    margin: 15px 0 0 0;
     text-align: center;
+    margin: 15px 0 0 0;
 }
 
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 350px){
     .email-text{
         font-size: 20px;
     }
 }
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 300px){
     .email-text{
         font-size: 17px;
     }
