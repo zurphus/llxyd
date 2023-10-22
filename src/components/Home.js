@@ -10,7 +10,7 @@ import { HiMiniPause } from 'react-icons/hi2';
 function Home(){
 
     useEffect(() => {
-        document.title = "LLXYD";
+        document.title = "LLXYD | Music Production & Mastering";
     }, []);
     
     const [isPlaying, setIsPlaying] = useState(false)

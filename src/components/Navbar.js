@@ -57,7 +57,7 @@ function Navbar(){
                         <ul className="overlayList">
                             <li className="overlayLi">
                                 <NavLink to="/">
-                                    <div className="navbar-icon-wrap">
+                                    <div className="navbar-icon-wrap" >
                                         <IoHome className="navbar-icons"/>
                                         <p className="navbar-overlay-links">HOME</p>
                                     </div>
