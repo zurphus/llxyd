@@ -1,12 +1,77 @@
 .main-element-education{
-    margin: 125px 0 0 0;
+    margin: 150px 0 0 0;
+    display: grid;
+    place-items: center;
+    
 }
 .education-title{
-    font-size: 37.5px;
+    font-size: 45px;
+    margin-bottom: 45px;
+}
+.education-description{
+    margin: 0 0 52.5px 0;
+    padding: 0 15px 0 15px;
+    max-width: 750px;
     text-align: center;
+    font-size: 27.5px;
+    line-height: 1.5;
 }
-.education-content-wrap{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding-bottom: 75px;
+.hero-btn{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 33px; 
+    background: linear-gradient(to right, #3f2694, #6b4eb6, #d57886, #6b4eb6, #3f2694);
+    background-size: 200%;
+    background-position: left;
+    color: #f6f4e6;
+    border: 4.5px #000000 solid;
+    border-radius: 1px;
+    letter-spacing: 1px;
+    padding: 16.5px 30px; 
+    border-radius: 30px;
+    text-decoration: none;
+    transition: all 0.3s;
+    cursor: pointer;
 }
+.hero-btn:hover{
+    background-position: right;
+}
+.hero-btn:active{
+    scale: 0.95;
+}
+
+
+@media screen and (max-width: 800px){
+    .main-element-education{
+        margin: 120px 0 0 0;
+    }
+    .education-description{
+        font-size: 25px;
+        line-height: 1.4;
+    }
+}
+@media screen and (max-width: 500px){
+    .main-element-education{
+        margin: 100px 0 0 0;
+    }
+    .education-description{
+        font-size: 22.5px;
+        line-height: 1.4;
+        margin-bottom: 30px;
+    }
+    .education-title{
+        margin-bottom: 30px;
+    }
+    .education-description{
+        margin-bottom: 30px;
+    }
+}
+@media screen and (max-width: 350px){
+    .education-title{
+        font-size: 35px;
+    }
+    .hero-btn{
+        font-size: 27.5px;
+    }
+}
+

@@ -7,7 +7,7 @@ function Educationpage(){
     return(
         <>
             <Navbar />
-            <ComingSoon />
+            <Education />
         </>
     )
 }

@@ -76,18 +76,6 @@
 .navbar-link:hover {
     color: #002f86; 
 }
-
-.navbar-link:hover .active-link {
-    color: #f6f4e6; /* DOESNT WORK */
-}
-/*
-.nav-menu a:not(.selected):hover{
-    color: #002f86;
-}
-.nav-menu:hover .selected{
-    color: #f6f4e6; 
-}
-*/
 .nav-menu .nav-dot{
     position: absolute;
     bottom: -6px;
@@ -124,6 +112,7 @@
     opacity: 1;
 }
 #overlayMenu{
+    visibility: hidden;
     position: fixed;
     top: 0;
     right: 0;
@@ -137,8 +126,10 @@
     transition: all 0.5s ease-out;
 }
 #overlayMenu.overlayActive{
+    visibility: visible;
     left: 0;
 }
+
 .no-scroll{
     overflow-y: hidden;
 }
@@ -189,9 +180,13 @@
 .nav-buttons-wrapper{
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    gap: 10px;
 }
 .nav-button,
 .nav-button-o{
+    display: grid;
+    place-items: center;
     font-family: 'Montserrat', sans-serif;
     background-color: #002366;
     color: #f6f4e6;
@@ -200,9 +195,9 @@
     font-size: 16px;
     font-weight: 600;
     padding: 8px 14px;
-    margin-left: 10px;
     white-space: nowrap;
     transition: all 0.2s;
+    text-decoration: none;
     cursor: pointer;
 }
 .nav-button-o{
@@ -215,6 +210,9 @@
     background-color: #001a4d; 
     transform: scale(1.05); 
     box-shadow: 0 0 7.5px rgba(0, 0, 0, 0.3);
+}
+.nav-button:active{
+    scale: 0.95;
 }
 
 

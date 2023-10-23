@@ -89,12 +89,8 @@ function Navbar(){
                             </li>
                         </ul>
                         <div className="nav-buttons-wrapper-o">
-                            <Link to="/sign-in">
-                                <button className="nav-button-o" id="signInBtn">SIGN IN</button>
-                            </Link>
-                            <Link to="/sign-up">
-                                <button className="nav-button-o" id="signUpBtn">SIGN UP</button>
-                            </Link>
+                            <Link to="/sign-in" className="nav-button-o" id="signInBtn">SIGN IN</Link>
+                            <Link to="/sign-up" className="nav-button-o" id="signUpBtn">SIGN UP</Link>
                         </div>
                     </div>
                 </div>
@@ -114,12 +110,8 @@ function Navbar(){
                     <div className="nav-dot"></div>
                 </div>
                 <div className="nav-buttons-wrapper">
-                    <Link to="/sign-in">
-                        <button className="nav-button" id="signInBtn">SIGN IN</button>
-                    </Link>
-                    <Link to="/sign-up">
-                        <button className="nav-button" id="signUpBtn">SIGN UP</button>
-                    </Link>
+                    <Link to="/sign-in" className="nav-button" id="signInBtn">SIGN IN</Link>
+                    <Link to="/sign-up" className="nav-button" id="signUpBtn">SIGN UP</Link>
                 </div>
             </nav>
             <button onClick={toggleMenu} className="menu" aria-label="Main Menu">

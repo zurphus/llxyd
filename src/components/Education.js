@@ -28,43 +28,14 @@ function Education(){
     return(
         <>
             <main className="main-element-education">
-            <h1 className="education-title">EDUCATION</h1>
-            {/*
-                <div className="education-content-wrap">
-                    
-                    <section className="first-section">
-                        <h2 className="product-title">TEACHING</h2>
-                        
-                        {educationOne.map((columnOne, index) => (
-                            <div key={columnOne.id}>
-                                <div className="product-set">
-                                    <div onClick={() => toggleOneState(index)} className={oneStates[index] ? `${columnOne.class} product-column` : 'product-column'}>
-                                    {oneStates[index] ? <p className='opened'>State is true</p> : <p>State is false</p>}
-                                    </div>
-                                </div>
-                            </div>
-                        ))}
-                        
-                    </section>
-                    */}
-                    {/*
-                    <section>
-                        <h2 className="product-title">TWO</h2>
-                        
-                        {educationTwo.map((columnTwo, index) => (
-                            <div key={columnTwo.id}>
-                                <div className="product-set">
-                                    <div onClick={() => toggleTwoStates(index)} className={twoStates[index] ? `${columnTwo.class} product-column` : 'product-column'}>
-                                    {twoStates[index] ? <p className='opened'>State is true</p> : <p>State is false</p>}
-                                    </div>
-                                </div>
-                            </div>
-                        ))}
-                        
-                    </section>
-                
-                </div>
-                */}
+                <h1 className="education-title">EDUCATION</h1>
+                <p className="education-description">
+                    Explore my exclusive music education content on HeroHero! 
+                    Elevate your music production and mixing skills with in-depth tutorials, 
+                    industry insights, and interactive sessions. 
+                    Join me on a journey to unlock your musical potential.
+                </p>
+                <a href="https://herohero.co/lubosllxyduyfbgvae" target="_blank" className="hero-btn">HEROHERO</a>
             </main>
         </>
     )

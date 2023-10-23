@@ -51,6 +51,7 @@
     letter-spacing: 3px;
     padding: 11px 75px;
     border-radius: 20px;
+    text-decoration: none;
     transition: all 0.2s;
     cursor: pointer;
 }
@@ -62,6 +63,9 @@
     background-color: #001a4d; 
     transform: scale(1.05); 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+}
+#start-button:active{
+    scale: 0.95;
 }
 .llyxd-image{
     border-radius: 10px;
@@ -155,12 +159,6 @@
 
 
 
-
-
-
-
-
-/* RESPONSIVE STYLES */
 @media screen and (max-width: 1150px){
     .introduction{
         gap: 50px;

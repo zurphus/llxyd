@@ -53,11 +53,7 @@ function Home(){
                             <p>
                                 Unlock the full potential of your music with our top-tier mix mastering service.
                             </p>
-                            <Link to="/pricing">
-                                <button id="start-button">
-                                    BUY
-                                </button>
-                            </Link>
+                            <Link to="/pricing" id="start-button">BUY</Link>
                         </div>
                         <div>
                             <div className="llyxd-image-wrapper">

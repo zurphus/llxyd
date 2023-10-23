@@ -70,7 +70,6 @@
     font-family: "Montserrat", sans-serif;
     background-size: 200%;
     background-image: linear-gradient(to right, #002366,#002366 ,#663399 );
-    /*background-image: linear-gradient(to right, #002366, #663399, #002366);*/
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
     transition: background-position 0.5s;
     
@@ -108,8 +107,8 @@ textarea {
     overflow-y: hidden;
     transition: background-position 0.5s;
 }
-textarea::placeholder {
-    color: #f6f4e6; /* Your desired color */
+textarea::placeholder{
+    color: #f6f4e6;
 }
 textarea:hover{
     background-position: right;
@@ -131,7 +130,6 @@ textarea:focus{
     border: none;
     background-size: 200%;
     background-image: linear-gradient(to right, #002366,#002366 ,#663399 );
-    /*background-image: linear-gradient(to right, #002366, #663399, #002366);*/
     
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
     margin-top: 20px;
