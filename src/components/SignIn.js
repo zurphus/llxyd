@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 function SignIn(){
 
     const [text, setText] = useState('COMING SOON');
-    const animationInterval = 750; // Interval between text changes in milliseconds
+    const animationInterval = 750;
 
     useEffect(() => {
         const animationLoop = () => {

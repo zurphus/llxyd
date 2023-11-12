@@ -41,7 +41,7 @@ body{
 .before-after-column{
     position: relative;
     padding: 15px;
-   /* max- */width: 300px;
+    width: 300px;
     min-height: 120px;
     border-radius: 20px;
     background-size: 225%;
@@ -82,11 +82,6 @@ body{
     transform: translate(-50%, 0px);
     font-size: 50px;
 }
-/*
-.after-column{
-    background: linear-gradient(to left, #002366, rebeccapurple);
-}
-*/
 
 @media screen and (max-width: 1000px){
     .first-section-work::after{

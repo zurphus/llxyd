@@ -24,18 +24,18 @@ function About() {
         <main className="main-element">
             {teamMembers.map((member) => (
                 <div key={member.id}>
-                    <section className='about-card'>
+                    <article className='about-card'>
                         {member.id % 2 === 0 ? (
                             <>
                                 {bodyWidth > 1000 && (
-                                    <img src={member.imageUrl} className="about-members-image" alt="member-image" />
+                                    <img src={member.imageUrl} className="about-members-image" alt="image of a member" />
                                 )}
                                 <div className="about-text-wrapper">
                                     <h2 className="about-name">{member.name}</h2>
                                     <p className="about-text">{member.about}</p>
                                 </div>
                                 {bodyWidth <= 1000 && (
-                                    <img src={member.imageUrl} className="about-members-image" alt="member-image" />
+                                    <img src={member.imageUrl} className="about-members-image" alt="image of a member" />
                                 )}
                             </>
                         ) : (
@@ -45,10 +45,10 @@ function About() {
                                     <h2 className="about-name">{member.name}</h2>
                                     <p className="about-text">{member.about}</p>
                                 </div>
-                                <img src={member.imageUrl} className="about-members-image" alt="member-image" />
+                                <img src={member.imageUrl} className="about-members-image" alt="image of a member" />
                             </>
                         )}
-                    </section>
+                    </article>
                 </div>
             ))}
         </main>

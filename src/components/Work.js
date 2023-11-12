@@ -10,38 +10,37 @@ function Work() {
         document.title = "LLXYD | Work";
     }, []);
     
-    const [isPlaying, setIsPlaying] = useState({});
+    const [isPlaying, setIsPlaying] = useState({})
     
     const playBtnClickHandler = (trackId) => {
-        const audioRef = trackIdToAudioRefMap[trackId];
+        const audioRef = trackIdToAudioRefMap[trackId]
         const currentlyPlayingTrackId = Object.keys(isPlaying).find(
             (key) => isPlaying[key]
-        );
+        )
 
-        // Toggle the state for the clicked track
         setIsPlaying((prevIsPlaying) => ({
             ...prevIsPlaying,
             [trackId]: !prevIsPlaying[trackId],
-        }));
-        // Pause the currently playing track if there is one
+        }))
+
         if (currentlyPlayingTrackId && currentlyPlayingTrackId !== trackId) {
             const currentlyPlayingAudioRef = trackIdToAudioRefMap[
                 currentlyPlayingTrackId
             ];
-            currentlyPlayingAudioRef.current.pause();
+            currentlyPlayingAudioRef.current.pause()
             setIsPlaying((prevIsPlaying) => ({
                 ...prevIsPlaying,
-                [currentlyPlayingTrackId]: false, // Set the previous track as not playing
-            }));
+                [currentlyPlayingTrackId]: false,
+            }))
         }
-        // Play or pause the clicked track
+
         if (!isPlaying[trackId]) {
             audioRef.current.volume = 0.5;
-            audioRef.current.play();
+            audioRef.current.play()
         } else {
-            audioRef.current.pause();
+            audioRef.current.pause()
         }
-    };
+    }
 
     const beforeTrackOneRef = useRef()
     const beforeTrackTwoRef = useRef()

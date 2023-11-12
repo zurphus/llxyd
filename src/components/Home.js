@@ -57,7 +57,7 @@ function Home(){
                         </div>
                         <div>
                             <div className="llyxd-image-wrapper">
-                                <img className="llyxd-image" src={llxydImage} alt="llxyd-image" />
+                                <img className="llyxd-image" src={llxydImage} alt="image of llxyd" />
                                 {isPlaying ? <HiMiniPause onClick={playBtnClickHandler} className="pause-icon"/> : <FaPlay onClick={playBtnClickHandler} className="play-icon"/>}
                                 <audio src={audioSong} ref={audioElement}></audio>
                             </div>

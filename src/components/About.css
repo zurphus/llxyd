@@ -64,11 +64,3 @@
         margin: 100px 0 250px;
     }
 }
-/*
-
-FIX THE BULLSHIT POSITIONING
-
-@media screen and (max-height: 500px) and (min-width: 1000px) {
-   Your CSS styles for screens that meet these conditions go here 
-}
-*/
