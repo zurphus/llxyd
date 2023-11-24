@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import './About.css'
-import llxydImage from '../images/loyd-image.jpg'
 import teamMembers from "../data/about-data";
 
 function About() {
