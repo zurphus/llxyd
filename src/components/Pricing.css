@@ -149,6 +149,15 @@
         grid-template-columns: 1fr;
     }
 }
+@media screen and (max-width: 400px){
+    .product-column{
+        width: 265px;
+        padding: 15px 0;
+    }
+    .mixmaster-description{
+        padding: 0 25px ;
+    }
+}
 
 
 /* COLUMNS */

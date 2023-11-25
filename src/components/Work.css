@@ -93,3 +93,8 @@ body{
         grid-template-columns: 1fr;
     }
 }
+@media screen and (max-width: 400px){
+    .before-after-column{
+        width: 235px;
+    }
+}
