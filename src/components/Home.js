@@ -11,6 +11,8 @@ function Home(){
 
     useEffect(() => {
         document.title = "LLXYD | Music Production & Mastering";
+        document.body.scrollTop = 0
+        document.documentElement.scrollTop = 0
     }, []);
     
     const [isPlaying, setIsPlaying] = useState(false)

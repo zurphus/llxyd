@@ -5,6 +5,8 @@ function Collab(){
 
     useEffect(() => {
         document.title = "LLXYD | Collab";
+        document.body.scrollTop = 0
+        document.documentElement.scrollTop = 0
     }, []);
 
     const [text, setText] = useState('');

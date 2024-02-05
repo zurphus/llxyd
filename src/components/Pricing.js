@@ -7,6 +7,8 @@ function Pricing(){
 
     useEffect(() => {
         document.title = "LLXYD | Pricing";
+        document.body.scrollTop = 0
+        document.documentElement.scrollTop = 0
     }, []);
 
     const [mixmasterStates, setMixmasterStates] = useState(Array(mixMasteringData.length).fill(false))
