@@ -31,17 +31,11 @@ function Navbar(){
 
     useEffect(() => {
         const menuButton = document.querySelector('.menu')
-        const overlayMenu = document.getElementById('overlayMenu')
-
         if(click){
-            menuButton.classList.add('opened')
             menuButton.setAttribute('aria-expanded', 'true')
-            overlayMenu.classList.add('overlayActive')
             document.body.classList.add('no-scroll');
         } else{
-            menuButton.classList.remove('opened')
             menuButton.setAttribute('aria-expanded', 'false')
-            overlayMenu.classList.remove('overlayActive')
             document.body.classList.remove('no-scroll');
         }
     }, [click]);
@@ -52,7 +46,7 @@ function Navbar(){
                 <h1 className="logo">
                     <Link to="/">LLXYD<span className="logo-span">DELU$ION ALLIANCE</span></Link>
                 </h1>
-                <div id="overlayMenu"> 
+                <div id="overlayMenu" className={click ? 'overlayActive' : ''}> 
                     <div className="overlay-content-wrap">
                         <ul className="overlayList">
                             <li className="overlayLi">
@@ -114,7 +108,7 @@ function Navbar(){
                     <Link to="/sign-up" className="nav-button" id="signUpBtn">SIGN UP</Link>
                 </div>
             </nav>
-            <button onClick={toggleMenu} className="menu" aria-label="Main Menu">
+            <button onClick={() => toggleMenu()} className={click ? 'menu opened' : 'menu'} aria-label="Main Menu">
                 <svg className="svg-menu" width="60" height="60" viewBox="0 0 100 100">
                     <path className="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
                     <path className="line line2" d="M 20,50 H 80" />
